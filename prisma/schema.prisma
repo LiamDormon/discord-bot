@@ -19,3 +19,9 @@ model Nickname {
   nickname String 
   userId   String @id @unique
 }
+
+model Role {
+  id   String @id @unique
+  name String
+  userId String
+}
