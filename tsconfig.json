@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "strict": true,
+    "types": ["@types/node"]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
