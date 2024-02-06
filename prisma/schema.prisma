@@ -14,3 +14,8 @@ model Setting {
   key   String @id @unique
   value String
 }
+
+model Nickname {
+  nickname String 
+  userId   String @id @unique
+}

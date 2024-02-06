@@ -3,10 +3,9 @@ import {Client, GatewayIntentBits} from "discord.js"
 import {PrismaClient} from '@prisma/client'
 import events from "./events";
 
-
 export const prisma = new PrismaClient()
 
-export const discordClient = new Client({intents: [GatewayIntentBits.Guilds]})
+export const discordClient = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages]})
 
 registerEvents(discordClient, events)
 
